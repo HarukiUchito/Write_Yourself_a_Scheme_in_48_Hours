@@ -4,4 +4,5 @@ import System.Environment
 main :: IO ()
 main = do
     args <- getArgs
-    putStrLn ("Hello, " ++ args !! 0)
+    input <- getLine
+    print ((read $ args !! 0) + (read $ args !! 1) - (read $ input))
